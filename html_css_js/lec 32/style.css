@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.items {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border: 2px solid;
+    padding: 5rem;
+}
+
+.container {
+    display: grid;
+    padding: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    background-color: antiquewhite;
+}
+
+#rotaex
+/*/*:hover*/
+
+*/ {
+    transform: rotatex(45deg);
+}
+
+#rotaey
+/*:hover*/
+
+{
+    /* transform: rotateY(45deg); */
+    transform: rotateY(-45deg);
+}
+
+#rotaez
+/*:hover*/
+
+{
+    transform: rotateZ(45deg);
+}
+
+#translatex
+/*:hover*/
+
+{
+    transform: translateX(-100px);
+}
+
+#translatey
+/*:hover*/
+
+{
+    transform: translateY(100px);
+}
+
+#translatez
+/*:hover*/
+
+{
+    /* we heve to set perspective from howmuch far we are watching this */
+    transform: perspective(300px) translateZ(-200px);
+}
+
+#scalex
+/*:hover*/
+
+{
+    transform: scaleX(1.5);
+}
+
+#scaley
+/*:hover*/
+
+{
+    /* transform: scaleY(1.5); */
+    transform: skewX(45deg);
+    /* skewy and skewX is possible */
+}
+
+#scalez
+/*:hover*/
+
+{
+    transform: scaleZ(5) perspective(30cm) rotateY(-30deg);
+}

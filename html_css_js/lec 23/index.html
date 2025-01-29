@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 1px solid black;
+        }
+        
+        .box {
+            width: 350px;
+            height: 80px;
+            background-color: aqua;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+            position: relative;
+            border-radius: 5px;
+            animation-name: right;
+            animation-duration: 5s;
+            animation-iteration-count: 2;
+            animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+            animation-direction: alternate-reverse animation-fill-mode: both;
+            animation-delay: 5s;
+            /* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+            /*  animation: 4s linear 3s 2 reverse both paused slide-in;*/
+        }
+        
+        @keyframes right {
+            from {
+                top: 0;
+                left: 0;
+            }
+            to {
+                top: 0;
+                left: 1200px;
+            }
+        }
+        
+        .box3 {
+            width: 350px;
+            height: 80px;
+            background-color: aqua;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+            position: relative;
+            border-radius: 5px;
+            animation-name: right;
+            animation-duration: 5s;
+            animation-iteration-count: 2;
+            animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+            animation-direction: reverse;
+            animation-fill-mode: both;
+            animation-delay: 5s;
+        }
+        
+        @keyframes right {
+            from {
+                top: 0;
+                left: 0;
+            }
+            to {
+                top: 0;
+                left: 1200px;
+            }
+        }
+        
+        .box2 {
+            background-color: azure;
+            width: 220px;
+            height: 30px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px 4px white;
+            border: 2px solid black;
+            position: relative;
+            animation: 5s linear infinite alternate forwards running manu;
+        }
+        
+        .circle {
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            border-radius: 100px;
+            border: 2px solid black;
+            position: relative;
+            left: 600px;
+            top: 150px;
+            box-shadow: 2px 2px 2px white;
+            animation: 5s ease-in-out 0s infinite alternate-reverse none running circlemove;
+        }
+        
+        @keyframes circlemove {
+            0% {
+                top: 1%;
+                left: 5%;
+            }
+            30% {
+                top: 5%;
+                left: 90%;
+            }
+            60% {
+                top: 90%;
+                right: 10%;
+            }
+            100% {
+                top: 90%;
+                left: 95%;
+            }
+        }
+        
+        @keyframes manu {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(120deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">hi</div>
+        <div class="box2"></div>
+        <div class="circle"></div>
+        <div class="box3">hi</div>
+
+
+
+    </div>
+
+</body>
+
+</html>

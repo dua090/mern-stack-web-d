@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <h1>Job Application </h1><br><br>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="Email">Email:</label><br>
+        <input type="email" name="email" id="email" required><br>
+        <label for="rsume">Resume:</label><br><br>
+        <input type="file" name="file" id="file" placeholder="Choose file"><br>
+        <label for="experience">Experience(years):</label><br><br>
+        <input type="number" name="experience" id="experience" min="0" max="50">
+        <fieldset>
+            <legend>Skills:
+            </legend>
+            <input type="checkbox" name="html" id="html"><br><br>
+            <label for="html">HTML</label><br><br>
+            <input type="checkbox" name="css" id="Css"><br><br>
+            <label for="Css">CSS</label><br><br>
+            <input type="checkbox" name="js" id="js"><br><br>
+            <label for="js">JavaScript</label><br><br>
+
+        </fieldset>
+        <label for="highedu">Highest Education:</label>
+        <br><br>
+        <select name="higheducation" id="highschool">
+        <option value="highshool">High school</option>
+        <option value="edu2">matric</option>
+        <option value="edu3">pg</option>
+        <option value="edu4">ug</option>
+
+    </select><br><br>
+        <label for="available">Availability</label><br>
+        <input type="radio" id="fulltime" name="availability">
+        <label for="available">Full-time</label>
+        <input type="radio" id="parttime" name="availability">
+        <label for="available">Part-time</label><br><br>
+        <label for="commennts">Additional comments</label>
+        <textarea name="comments" id="comments"></textarea>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+{
+    "dataworkspace.excludedProjects": [
+        "MANU/MANU.sqlproj"
+    ],
+    "liveServer.settings.port": 5501
+}

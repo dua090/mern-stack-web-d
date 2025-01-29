@@ -1,0 +1,9 @@
+.navba{
+list-style: none;
+display: flex;
+gap:2rem;
+background-color: antiquewhite;
+}
+.active-link{
+    background-color: #4CAF50;
+}
