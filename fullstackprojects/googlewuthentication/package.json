@@ -1,0 +1,13 @@
+{
+  "web": {
+    "client_id": "804808992117-c6ao5in0k9jo2a1b5uakgcjvt5q34l2c.apps.googleusercontent.com",
+    "project_id": "propane-folio-450817-u1",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret": "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",
+    "javascript_origins": [
+      "http://localhost:5173"
+    ]
+  }
+}
