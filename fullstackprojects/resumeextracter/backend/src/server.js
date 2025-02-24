@@ -9,13 +9,7 @@ dotenv.config();
 connectDB();
 
 const app = express();
-app.use(
-    cors({
-      origin: "*", // Allow all origins (for testing)
-      methods: ["GET", "POST", "PUT", "DELETE"],
-      allowedHeaders: ["Content-Type"],
-    })
-  );
+app.use(cors());
   
 app.use(express.json());
 
