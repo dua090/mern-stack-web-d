@@ -9,8 +9,15 @@ dotenv.config();
 connectDB();
 
 const app = express();
-app.use(cors());
-  
+app.use(
+  cors({
+    origin: "*", // Temporarily allow all origins (for testing)
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true, // Allow cookies/auth headers
+  })
+);
+
 app.use(express.json());
 
 app.use("/api", resumeRoutes);
