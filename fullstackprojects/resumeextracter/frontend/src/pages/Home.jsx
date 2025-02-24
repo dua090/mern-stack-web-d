@@ -69,7 +69,7 @@ const Home = () => {
 
         try {
             setLoading(true);
-            const response = await axios.post("http://localhost:5001/api/upload", formData); // Corrected API endpoint
+            const response = await axios.post("https://mern-stack-web-d.onrender.com/api/upload", formData); // Corrected API endpoint
             localStorage.setItem("extractedData", JSON.stringify(response.data.data)); // Adjusted to match backend
             navigate("/jobs");
         } catch (error) {
