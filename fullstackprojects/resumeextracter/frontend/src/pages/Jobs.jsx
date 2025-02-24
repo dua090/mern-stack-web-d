@@ -285,7 +285,7 @@ const Jobs = () => {
                 const preferencesQuery = extractedData.extractedData.job_preferences.join(", "); // Corrected access
                 console.log("Jobs.js: Preferences Query:", preferencesQuery);
 
-                const response = await axios.get(`http://localhost:5001/api/jobs`, {
+                const response = await axios.get(`https://mern-stack-web-d.onrender.com/api/jobs`, {
                     params: {
                         preferences: preferencesQuery,
                     },
