@@ -9,12 +9,16 @@ dotenv.config();
 connectDB();
 
 const app = express();
+<<<<<<< HEAD
 app.use(
   cors({
     origin: "*", // Temporarily allow all origins (for testing)
      // Allow cookies/auth headers
   })
 );
+=======
+app.use(cors());
+>>>>>>> ace7726 (Your commit message here)
 
 app.use(express.json());
 
