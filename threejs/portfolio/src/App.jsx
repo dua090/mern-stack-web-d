@@ -6,8 +6,7 @@ import Projects from './sections/Projects.jsx'
 
 const App = () => {
   return (
-    <main className='max-w-7xl mx-auto'>
-     <Navbar/>
+    <main className="max-w-7xl mx-auto relative">     <Navbar/>
      <Hero/>
      <About/>
      <Projects/>
