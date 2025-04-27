@@ -1,3 +1,0 @@
-in db if we write User it will show under users in atlas
-
-2. app.use(express.json()); to extract json data from body
