@@ -1,5 +1,5 @@
 // show dbs //show db
-// use employes
+//use employes
 // crud operation
 // c-create
 // r-read 
